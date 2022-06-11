@@ -31,6 +31,12 @@ source-repository head
 common base
     default-language: Haskell2010
     ghc-options: -Wall -fdefer-typed-holes
+    default-extensions:
+        DataKinds
+        OverloadedStrings
+        QuasiQuotes
+        TemplateHaskell
+        TypeOperators
     build-depends:
         aeson >= 2
       , base ^>= 4.14 || ^>= 4.15 || ^>= 4.16
