@@ -2,8 +2,14 @@ cabal-version: 3.0
 
 name:                activitypub
 version:             0.1.0.0
--- synopsis:
--- description:
+
+description:
+    The [ActivityPub protocol](https://www.w3.org/TR/activitypub/)
+    is a decentralized social networking protocol.
+    It provides a client to server API for creating, updating and
+    deleting content, as well as a federated server to server API
+    for delivering notifications and content.
+
 homepage:            https://github.com/LukeHoersten/activitypub#readme
 license:             BSD-3-Clause
 license-file:        LICENSE
