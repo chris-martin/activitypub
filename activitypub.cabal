@@ -27,37 +27,38 @@ library
                      , Network.ActivityPub.Vocabulary.Core
                      , Network.ActivityPub.Vocabulary.Object
                      , Network.ActivityPub.Vocabulary.Properties
+                     , Lib
 
   build-depends:       aeson       >= 2
                      , base        ^>= 4.14 || ^>= 4.15 || ^>= 4.16
                      , network-uri ^>= 2.6.3
                      , text        >= 1.2 && < 1.3
                      , time        >= 1.8 && < 1.10
-                     -- , servant-server
-                     -- , wai
-                     -- , warp
+                     , servant-server
+                     , wai
+                     , warp
   default-language:    Haskell2010
 
--- executable activitypub-exe
---   hs-source-dirs:      app
---   main-is:             Main.hs
---   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
---   build-depends:       base
---                      , activitypub
---   default-language:    Haskell2010
+executable activitypub-exe
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , activitypub
+  default-language:    Haskell2010
 
--- test-suite activitypub-test
---   type:                exitcode-stdio-1.0
---   hs-source-dirs:      test
---   main-is:             Spec.hs
---   build-depends:       base
---                      , activitypub
---                      , hspec
---                      , hspec-wai
---                      , hspec-wai-json
---                      , aeson
---   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
---   default-language:    Haskell2010
+test-suite activitypub-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , activitypub
+                     , hspec
+                     , hspec-wai
+                     , hspec-wai-json
+                     , aeson
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
 
 source-repository head
   type:     git
