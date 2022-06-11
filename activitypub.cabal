@@ -1,3 +1,5 @@
+cabal-version: 3.0
+
 name:                activitypub
 version:             0.1.0.0
 -- synopsis:
@@ -11,7 +13,6 @@ copyright:           2018 Luke Hoersten
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
-cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
