@@ -5,7 +5,7 @@ version:             0.1.0.0
 -- synopsis:
 -- description:
 homepage:            https://github.com/LukeHoersten/activitypub#readme
-license:             BSD3
+license:             BSD-3-Clause
 license-file:        LICENSE
 author:              Luke Hoersten
 maintainer:          luke@hoersten.org
